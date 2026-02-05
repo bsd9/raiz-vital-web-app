@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Raíz Vital Wellness Palette */
+    /* Sage Green #7A9D8E */
+    --sage: 153 16% 55%;
+    /* Dark Green #2F4F46 */
+    --forest: 160 25% 25%;
+    /* Sand Beige #E9E4DA */
+    --sand: 36 24% 88%;
+    /* Warm White #F7F6F3 */
+    --cream: 40 20% 96%;
+    /* Matte Gold #BFA36A */
+    --gold: 41 40% 58%;
+
+    --background: 40 20% 96%;
+    --foreground: 160 25% 25%;
+    --card: 0 0% 100%;
+    --card-foreground: 160 25% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 25% 25%;
+    --primary: 153 16% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 24% 88%;
+    --secondary-foreground: 160 25% 25%;
+    --muted: 36 24% 88%;
+    --muted-foreground: 160 20% 40%;
+    --accent: 41 40% 58%;
+    --accent-foreground: 160 25% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 20% 80%;
+    --input: 36 20% 85%;
+    --ring: 153 16% 55%;
+    --chart-1: 153 16% 55%;
+    --chart-2: 160 25% 25%;
+    --chart-3: 41 40% 58%;
+    --chart-4: 36 24% 70%;
+    --chart-5: 153 20% 70%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 160 25% 25%;
+    --sidebar-primary: 153 16% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 36 24% 88%;
+    --sidebar-accent-foreground: 160 25% 25%;
+    --sidebar-border: 36 20% 85%;
+    --sidebar-ring: 153 16% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
