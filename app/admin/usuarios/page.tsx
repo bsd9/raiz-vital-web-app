@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import { usuarios as initialUsuarios, type Usuario } from "@/data/usuarios"
-import { reservas } from "@/data/agendas"
+import { reservasIniciales as reservas, type Reserva } from "@/data/agendas"
+import { servicios } from "@/data/servicios"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -230,7 +231,7 @@ export default function AdminUsuariosPage() {
                       >
                         <div>
                           <p className="font-medium text-forest text-sm">
-                            {reserva.servicioNombre}
+                            {servicios.find((s) => s.id === reserva.servicioId)?.nombre || reserva.servicioId}
                           </p>
                           <p className="text-xs text-muted-foreground">
                             {formatDate(reserva.fecha)} - {reserva.hora}
