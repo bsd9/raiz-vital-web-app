@@ -135,7 +135,7 @@ export default function AdminServiciosPage() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="precio">Precio (€)</Label>
+                  <Label htmlFor="precio">Precio (COP)</Label>
                   <Input
                     id="precio"
                     type="number"
@@ -272,7 +272,7 @@ export default function AdminServiciosPage() {
                     {servicio.duracion}
                   </td>
                   <td className="px-4 py-3 text-sm font-medium text-primary">
-                    {servicio.precio}€
+                    {servicio.precio}COP
                   </td>
                   <td className="px-4 py-3">
                     <div className="flex justify-end gap-2">

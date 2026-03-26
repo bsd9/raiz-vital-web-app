@@ -7,7 +7,7 @@ const footerLinks = {
     { href: '/servicios', label: 'Tratamientos Capilares' },
     { href: '/servicios', label: 'Tratamientos Corporales' },
     { href: '/sueros', label: 'Sueroterapia' },
-    { href: '/sueros', label: 'Infusiones' },
+    { href: '/infusiones', label: 'Infusiones' },
   ],
   empresa: [
     { href: '/blog', label: 'Blog' },

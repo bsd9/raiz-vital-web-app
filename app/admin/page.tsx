@@ -48,7 +48,7 @@ export default function AdminDashboard() {
     },
     {
       title: 'Ingresos Estimados',
-      value: `${estimatedRevenue}€`,
+      value: `${estimatedRevenue}COP`,
       icon: DollarSign,
       color: 'text-sage',
       bg: 'bg-sage/20'
@@ -211,7 +211,7 @@ export default function AdminDashboard() {
                   <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-medium capitalize text-secondary-foreground">
                     {servicio.categoria}
                   </span>
-                  <span className="font-semibold text-primary">{servicio.precio}€</span>
+                  <span className="font-semibold text-primary">{servicio.precio}COP</span>
                 </div>
                 <h3 className="mt-2 font-medium text-card-foreground text-sm">
                   {servicio.nombre}
