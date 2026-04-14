@@ -68,7 +68,7 @@ export function ProductCard({ producto, className }: ProductCardProps) {
         {/* Price and Add to Cart */}
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-semibold text-primary">
-            {producto.precio}COP
+            {producto.precio}€
           </span>
           
           <Button

@@ -54,7 +54,7 @@ export function ServiceCard({ servicio, className }: ServiceCardProps) {
             <span>{servicio.duracion}</span>
           </div>
           <span className="text-lg font-semibold text-primary">
-            {servicio.precio}COP
+            {servicio.precio}€
           </span>
         </div>
 
