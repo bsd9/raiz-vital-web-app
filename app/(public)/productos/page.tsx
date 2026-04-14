@@ -111,7 +111,7 @@ export default function ProductosPage() {
                                 {item.producto.nombre}
                               </h4>
                               <p className="text-sm text-muted-foreground">
-                                {item.producto.precio}€
+                                {item.producto.precio}COP
                               </p>
                               <div className="mt-2 flex items-center gap-2">
                                 <Button
@@ -155,7 +155,7 @@ export default function ProductosPage() {
                             </div>
                             <div className="text-right">
                               <span className="font-semibold text-foreground">
-                                {(item.producto.precio * item.cantidad).toFixed(2)}€
+                                {(item.producto.precio * item.cantidad).toFixed(2)}COP
                               </span>
                             </div>
                           </div>
@@ -168,7 +168,7 @@ export default function ProductosPage() {
                         <div className="flex items-center justify-between">
                           <span className="text-lg font-semibold">Total</span>
                           <span className="text-xl font-bold text-primary">
-                            {total.toFixed(2)}€
+                            {total.toFixed(2)}COP
                           </span>
                         </div>
                         <Button className="w-full" size="lg">
